@@ -8,22 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B044D85182D4E9F00A17BFA /* KeccakMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D84182D4E9F00A17BFA /* KeccakMessage.m */; };
-		8B044D97182D536C00A17BFA /* duplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D87182D536C00A17BFA /* duplex.cpp */; };
-		8B044D98182D536C00A17BFA /* duplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D87182D536C00A17BFA /* duplex.cpp */; };
-		8B044D99182D536C00A17BFA /* Keccak-f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D89182D536C00A17BFA /* Keccak-f.cpp */; };
-		8B044D9A182D536C00A17BFA /* Keccak-f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D89182D536C00A17BFA /* Keccak-f.cpp */; };
-		8B044D9B182D536C00A17BFA /* padding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8B182D536C00A17BFA /* padding.cpp */; };
-		8B044D9C182D536C00A17BFA /* padding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8B182D536C00A17BFA /* padding.cpp */; };
-		8B044D9D182D536C00A17BFA /* progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8D182D536C00A17BFA /* progress.cpp */; };
-		8B044D9E182D536C00A17BFA /* progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8D182D536C00A17BFA /* progress.cpp */; };
-		8B044D9F182D536C00A17BFA /* sponge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8F182D536C00A17BFA /* sponge.cpp */; };
-		8B044DA0182D536C00A17BFA /* sponge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8F182D536C00A17BFA /* sponge.cpp */; };
-		8B044DA1182D536C00A17BFA /* spongetree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D91182D536C00A17BFA /* spongetree.cpp */; };
-		8B044DA2182D536C00A17BFA /* spongetree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D91182D536C00A17BFA /* spongetree.cpp */; };
-		8B044DA3182D536C00A17BFA /* transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D93182D536C00A17BFA /* transformations.cpp */; };
-		8B044DA4182D536C00A17BFA /* transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D93182D536C00A17BFA /* transformations.cpp */; };
-		8B044DA6182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */; };
-		8B044DA7182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */; };
 		8B044DB2182D69F000A17BFA /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB1182D69F000A17BFA /* NSString+Base64.m */; };
 		8B044DB3182D69F000A17BFA /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB1182D69F000A17BFA /* NSString+Base64.m */; };
 		8B044DB6182DCC5D00A17BFA /* KeccakSponge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB5182DCC5D00A17BFA /* KeccakSponge.m */; };
@@ -62,7 +46,6 @@
 		8BC54360182AACB900148092 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5435F182AACB900148092 /* CoreData.framework */; };
 		8BC54363182AB20200148092 /* Message_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC54361182AB20200148092 /* Message_Log.xcdatamodeld */; };
 		8BC54364182AB20200148092 /* Message_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC54361182AB20200148092 /* Message_Log.xcdatamodeld */; };
-		8BD438E71850B553005C521C /* Keccak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD438E61850B553005C521C /* Keccak.cpp */; };
 		8BDB9EBB183E995900821CAF /* EditSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB9EBA183E995900821CAF /* EditSettingsViewController.m */; };
 		8BF538B81816B733001F2F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538B71816B733001F2F5C /* Foundation.framework */; };
 		8BF538BA1816B733001F2F5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538B91816B733001F2F5C /* CoreGraphics.framework */; };
@@ -92,23 +75,6 @@
 /* Begin PBXFileReference section */
 		8B044D83182D4E9F00A17BFA /* KeccakMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakMessage.h; path = Model/KeccakMessage.h; sourceTree = "<group>"; };
 		8B044D84182D4E9F00A17BFA /* KeccakMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakMessage.m; path = Model/KeccakMessage.m; sourceTree = "<group>"; };
-		8B044D87182D536C00A17BFA /* duplex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = duplex.cpp; path = Model/Keccak/duplex.cpp; sourceTree = "<group>"; };
-		8B044D88182D536C00A17BFA /* duplex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = duplex.h; path = Model/Keccak/duplex.h; sourceTree = "<group>"; };
-		8B044D89182D536C00A17BFA /* Keccak-f.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "Keccak-f.cpp"; path = "Model/Keccak/Keccak-f.cpp"; sourceTree = "<group>"; };
-		8B044D8A182D536C00A17BFA /* Keccak-f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Keccak-f.h"; path = "Model/Keccak/Keccak-f.h"; sourceTree = "<group>"; };
-		8B044D8B182D536C00A17BFA /* padding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = padding.cpp; path = Model/Keccak/padding.cpp; sourceTree = "<group>"; };
-		8B044D8C182D536C00A17BFA /* padding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = padding.h; path = Model/Keccak/padding.h; sourceTree = "<group>"; };
-		8B044D8D182D536C00A17BFA /* progress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = progress.cpp; path = Model/Keccak/progress.cpp; sourceTree = "<group>"; };
-		8B044D8E182D536C00A17BFA /* progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = progress.h; path = Model/Keccak/progress.h; sourceTree = "<group>"; };
-		8B044D8F182D536C00A17BFA /* sponge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sponge.cpp; path = Model/Keccak/sponge.cpp; sourceTree = "<group>"; };
-		8B044D90182D536C00A17BFA /* sponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sponge.h; path = Model/Keccak/sponge.h; sourceTree = "<group>"; };
-		8B044D91182D536C00A17BFA /* spongetree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spongetree.cpp; path = Model/Keccak/spongetree.cpp; sourceTree = "<group>"; };
-		8B044D92182D536C00A17BFA /* spongetree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spongetree.h; path = Model/Keccak/spongetree.h; sourceTree = "<group>"; };
-		8B044D93182D536C00A17BFA /* transformations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transformations.cpp; path = Model/Keccak/transformations.cpp; sourceTree = "<group>"; };
-		8B044D94182D536C00A17BFA /* transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transformations.h; path = Model/Keccak/transformations.h; sourceTree = "<group>"; };
-		8B044D95182D536C00A17BFA /* translationsymmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translationsymmetry.h; path = Model/Keccak/translationsymmetry.h; sourceTree = "<group>"; };
-		8B044D96182D536C00A17BFA /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = Model/Keccak/types.h; sourceTree = "<group>"; };
-		8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = genKATShortMsg.cpp; path = Model/Keccak/genKATShortMsg.cpp; sourceTree = "<group>"; };
 		8B044DB0182D69F000A17BFA /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		8B044DB1182D69F000A17BFA /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		8B044DB4182DCC5D00A17BFA /* KeccakSponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakSponge.h; path = Model/KeccakSponge.h; sourceTree = "<group>"; };
@@ -168,8 +134,6 @@
 		8BC52A1F1833F8C0002F7AF3 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = MessageViewModel/Message.m; sourceTree = "<group>"; };
 		8BC5435F182AACB900148092 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8BC54362182AB20200148092 /* Message_Log.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Message_Log.xcdatamodel; sourceTree = "<group>"; };
-		8BD438E61850B553005C521C /* Keccak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Keccak.cpp; path = Model/Keccak/Keccak.cpp; sourceTree = "<group>"; };
-		8BD438E81850B562005C521C /* Keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Keccak.h; path = Model/Keccak/Keccak.h; sourceTree = "<group>"; };
 		8BDB9EB9183E995900821CAF /* EditSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSettingsViewController.h; sourceTree = "<group>"; };
 		8BDB9EBA183E995900821CAF /* EditSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSettingsViewController.m; sourceTree = "<group>"; };
 		8BF538B41816B733001F2F5C /* HU Keccak App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HU Keccak App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,32 +182,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B044D86182D535100A17BFA /* C++ */ = {
-			isa = PBXGroup;
-			children = (
-				8B044D87182D536C00A17BFA /* duplex.cpp */,
-				8B044D88182D536C00A17BFA /* duplex.h */,
-				8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */,
-				8B044D89182D536C00A17BFA /* Keccak-f.cpp */,
-				8B044D8A182D536C00A17BFA /* Keccak-f.h */,
-				8BD438E61850B553005C521C /* Keccak.cpp */,
-				8BD438E81850B562005C521C /* Keccak.h */,
-				8B044D8B182D536C00A17BFA /* padding.cpp */,
-				8B044D8C182D536C00A17BFA /* padding.h */,
-				8B044D8D182D536C00A17BFA /* progress.cpp */,
-				8B044D8E182D536C00A17BFA /* progress.h */,
-				8B044D8F182D536C00A17BFA /* sponge.cpp */,
-				8B044D90182D536C00A17BFA /* sponge.h */,
-				8B044D91182D536C00A17BFA /* spongetree.cpp */,
-				8B044D92182D536C00A17BFA /* spongetree.h */,
-				8B044D93182D536C00A17BFA /* transformations.cpp */,
-				8B044D94182D536C00A17BFA /* transformations.h */,
-				8B044D95182D536C00A17BFA /* translationsymmetry.h */,
-				8B044D96182D536C00A17BFA /* types.h */,
-			);
-			name = "C++";
-			sourceTree = "<group>";
-		};
 		8B2258E018982DAF0021DAE5 /* KeccakModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,7 +213,6 @@
 		8BBA09751828378E00DAF39D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8B044D86182D535100A17BFA /* C++ */,
 				8B044DC9182DD8B300A17BFA /* KeccakIdentity.h */,
 				8B044DCA182DD8B300A17BFA /* KeccakIdentity.m */,
 				8B044DCD182DDC2D00A17BFA /* KeccakMessageBlock.h */,
@@ -509,23 +446,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B044D99182D536C00A17BFA /* Keccak-f.cpp in Sources */,
 				8B2258EA18982FA50021DAE5 /* KeccakDataLog.m in Sources */,
 				8BC3166F1889AF2A0099EFEF /* KeccakLane.m in Sources */,
 				8BBA09661827E48700DAF39D /* MessageViewController.m in Sources */,
-				8B044DA6182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */,
 				8B1342F918B6B8E70085548A /* VisualDetailViewController.m in Sources */,
 				8B2258F01898306D0021DAE5 /* KeccakSqueezingPhaseLog.m in Sources */,
-				8B044DA3182D536C00A17BFA /* transformations.cpp in Sources */,
 				8B1342F618B6B5850085548A /* VisualDetail.m in Sources */,
 				8B72ABAD188E3687003FFA17 /* KeccakBlock.m in Sources */,
-				8B044D9D182D536C00A17BFA /* progress.cpp in Sources */,
 				8B044DCF182DDC2D00A17BFA /* KeccakMessageBlock.m in Sources */,
-				8B044D97182D536C00A17BFA /* duplex.cpp in Sources */,
 				8B044DC7182DD87300A17BFA /* KeccakPermutation.m in Sources */,
 				8BDB9EBB183E995900821CAF /* EditSettingsViewController.m in Sources */,
-				8BD438E71850B553005C521C /* Keccak.cpp in Sources */,
-				8B044D9B182D536C00A17BFA /* padding.cpp in Sources */,
 				8B38CBCE18355768003C27BA /* DetailViewController.m in Sources */,
 				8BC52A201833F8C0002F7AF3 /* Message.m in Sources */,
 				8B044DBF182DD1E100A17BFA /* KeccakTransformation.m in Sources */,
@@ -536,13 +466,11 @@
 				8B044D85182D4E9F00A17BFA /* KeccakMessage.m in Sources */,
 				8B2258ED18982FFE0021DAE5 /* KeccakInitializationPhaseLog.m in Sources */,
 				8B044DB2182D69F000A17BFA /* NSString+Base64.m in Sources */,
-				8B044DA1182D536C00A17BFA /* spongetree.cpp in Sources */,
 				8B2258F3189832260021DAE5 /* CypherMessage.m in Sources */,
 				8B38CBCB18354ED6003C27BA /* CypherTextCell.m in Sources */,
 				8BF538C81816B733001F2F5C /* AppDelegate.m in Sources */,
 				8B8F3A83183432DB000947CD /* MessageList.m in Sources */,
 				8BF538C41816B733001F2F5C /* main.m in Sources */,
-				8B044D9F182D536C00A17BFA /* sponge.cpp in Sources */,
 				8B044DCB182DD8B300A17BFA /* KeccakIdentity.m in Sources */,
 				8B2258E718982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.m in Sources */,
 			);
@@ -556,19 +484,11 @@
 				8B72ABB6188EE6F5003FFA17 /* KeccakMessageTests.m in Sources */,
 				8B72ABB0188E376F003FFA17 /* KeccakBlockTests.m in Sources */,
 				8B044DB3182D69F000A17BFA /* NSString+Base64.m in Sources */,
-				8B044DA0182D536C00A17BFA /* sponge.cpp in Sources */,
 				8B044DB7182DCC5D00A17BFA /* KeccakSponge.m in Sources */,
-				8B044DA7182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */,
-				8B044D9C182D536C00A17BFA /* padding.cpp in Sources */,
-				8B044DA2182D536C00A17BFA /* spongetree.cpp in Sources */,
 				8B044DCC182DD8B300A17BFA /* KeccakIdentity.m in Sources */,
 				8B2258F9189860C10021DAE5 /* CypherMessageTests.m in Sources */,
 				8B044DC8182DD87300A17BFA /* KeccakPermutation.m in Sources */,
-				8B044D9E182D536C00A17BFA /* progress.cpp in Sources */,
 				8B044DC0182DD1E100A17BFA /* KeccakTransformation.m in Sources */,
-				8B044DA4182D536C00A17BFA /* transformations.cpp in Sources */,
-				8B044D98182D536C00A17BFA /* duplex.cpp in Sources */,
-				8B044D9A182D536C00A17BFA /* Keccak-f.cpp in Sources */,
 				8B044DD0182DDC2D00A17BFA /* KeccakMessageBlock.m in Sources */,
 				8B2258F61898375D0021DAE5 /* MessageListTests.m in Sources */,
 				8BC54364182AB20200148092 /* Message_Log.xcdatamodeld in Sources */,
