@@ -7,6 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B044D85182D4E9F00A17BFA /* KeccakMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D84182D4E9F00A17BFA /* KeccakMessage.m */; };
+		8B044D97182D536C00A17BFA /* duplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D87182D536C00A17BFA /* duplex.cpp */; };
+		8B044D98182D536C00A17BFA /* duplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D87182D536C00A17BFA /* duplex.cpp */; };
+		8B044D99182D536C00A17BFA /* Keccak-f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D89182D536C00A17BFA /* Keccak-f.cpp */; };
+		8B044D9A182D536C00A17BFA /* Keccak-f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D89182D536C00A17BFA /* Keccak-f.cpp */; };
+		8B044D9B182D536C00A17BFA /* padding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8B182D536C00A17BFA /* padding.cpp */; };
+		8B044D9C182D536C00A17BFA /* padding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8B182D536C00A17BFA /* padding.cpp */; };
+		8B044D9D182D536C00A17BFA /* progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8D182D536C00A17BFA /* progress.cpp */; };
+		8B044D9E182D536C00A17BFA /* progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8D182D536C00A17BFA /* progress.cpp */; };
+		8B044D9F182D536C00A17BFA /* sponge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8F182D536C00A17BFA /* sponge.cpp */; };
+		8B044DA0182D536C00A17BFA /* sponge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D8F182D536C00A17BFA /* sponge.cpp */; };
+		8B044DA1182D536C00A17BFA /* spongetree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D91182D536C00A17BFA /* spongetree.cpp */; };
+		8B044DA2182D536C00A17BFA /* spongetree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D91182D536C00A17BFA /* spongetree.cpp */; };
+		8B044DA3182D536C00A17BFA /* transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D93182D536C00A17BFA /* transformations.cpp */; };
+		8B044DA4182D536C00A17BFA /* transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044D93182D536C00A17BFA /* transformations.cpp */; };
+		8B044DA6182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */; };
+		8B044DA7182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */; };
+		8B044DB2182D69F000A17BFA /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB1182D69F000A17BFA /* NSString+Base64.m */; };
+		8B044DB3182D69F000A17BFA /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB1182D69F000A17BFA /* NSString+Base64.m */; };
+		8B044DB6182DCC5D00A17BFA /* KeccakSponge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB5182DCC5D00A17BFA /* KeccakSponge.m */; };
+		8B044DB7182DCC5D00A17BFA /* KeccakSponge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DB5182DCC5D00A17BFA /* KeccakSponge.m */; };
+		8B044DBF182DD1E100A17BFA /* KeccakTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DBE182DD1E100A17BFA /* KeccakTransformation.m */; };
+		8B044DC0182DD1E100A17BFA /* KeccakTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DBE182DD1E100A17BFA /* KeccakTransformation.m */; };
+		8B044DC7182DD87300A17BFA /* KeccakPermutation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DC6182DD87300A17BFA /* KeccakPermutation.m */; };
+		8B044DC8182DD87300A17BFA /* KeccakPermutation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DC6182DD87300A17BFA /* KeccakPermutation.m */; };
+		8B044DCB182DD8B300A17BFA /* KeccakIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DCA182DD8B300A17BFA /* KeccakIdentity.m */; };
+		8B044DCC182DD8B300A17BFA /* KeccakIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DCA182DD8B300A17BFA /* KeccakIdentity.m */; };
+		8B044DCF182DDC2D00A17BFA /* KeccakMessageBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DCE182DDC2D00A17BFA /* KeccakMessageBlock.m */; };
+		8B044DD0182DDC2D00A17BFA /* KeccakMessageBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B044DCE182DDC2D00A17BFA /* KeccakMessageBlock.m */; };
+		8B1342F318B6B5260085548A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1342F218B6B5260085548A /* OpenGLES.framework */; };
+		8B1342F618B6B5850085548A /* VisualDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1342F518B6B5850085548A /* VisualDetail.m */; };
+		8B1342F918B6B8E70085548A /* VisualDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1342F818B6B8E70085548A /* VisualDetailViewController.m */; };
+		8B2258E718982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258E618982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.m */; };
+		8B2258EA18982FA50021DAE5 /* KeccakDataLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258E918982FA50021DAE5 /* KeccakDataLog.m */; };
+		8B2258ED18982FFE0021DAE5 /* KeccakInitializationPhaseLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258EC18982FFE0021DAE5 /* KeccakInitializationPhaseLog.m */; };
+		8B2258F01898306D0021DAE5 /* KeccakSqueezingPhaseLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258EF1898306D0021DAE5 /* KeccakSqueezingPhaseLog.m */; };
+		8B2258F3189832260021DAE5 /* CypherMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258F2189832260021DAE5 /* CypherMessage.m */; };
+		8B2258F61898375D0021DAE5 /* MessageListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258F51898375D0021DAE5 /* MessageListTests.m */; };
+		8B2258F9189860C10021DAE5 /* CypherMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2258F8189860C10021DAE5 /* CypherMessageTests.m */; };
+		8B38CBC818353767003C27BA /* MessageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CBC718353767003C27BA /* MessageCollectionView.m */; };
+		8B38CBCB18354ED6003C27BA /* CypherTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CBCA18354ED6003C27BA /* CypherTextCell.m */; };
+		8B38CBCE18355768003C27BA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CBCD18355768003C27BA /* DetailViewController.m */; };
+		8B72ABAD188E3687003FFA17 /* KeccakBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B72ABAC188E3687003FFA17 /* KeccakBlock.m */; };
+		8B72ABB0188E376F003FFA17 /* KeccakBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B72ABAF188E376F003FFA17 /* KeccakBlockTests.m */; };
+		8B72ABB6188EE6F5003FFA17 /* KeccakMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B72ABB5188EE6F5003FFA17 /* KeccakMessageTests.m */; };
+		8B8F3A83183432DB000947CD /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F3A82183432DB000947CD /* MessageList.m */; };
+		8BBA09661827E48700DAF39D /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA09651827E48700DAF39D /* MessageViewController.m */; };
+		8BBA09741828227000DAF39D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBA09731828226F00DAF39D /* QuartzCore.framework */; };
+		8BC3166C1889AEA80099EFEF /* KeccakLaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3166B1889AEA80099EFEF /* KeccakLaneTests.m */; };
+		8BC3166F1889AF2A0099EFEF /* KeccakLane.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3166E1889AF2A0099EFEF /* KeccakLane.m */; };
+		8BC52A1D1832DE87002F7AF3 /* PlainTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC52A1C1832DE87002F7AF3 /* PlainTextCell.m */; };
+		8BC52A201833F8C0002F7AF3 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC52A1F1833F8C0002F7AF3 /* Message.m */; };
+		8BC54360182AACB900148092 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5435F182AACB900148092 /* CoreData.framework */; };
+		8BC54363182AB20200148092 /* Message_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC54361182AB20200148092 /* Message_Log.xcdatamodeld */; };
+		8BC54364182AB20200148092 /* Message_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC54361182AB20200148092 /* Message_Log.xcdatamodeld */; };
+		8BD438E71850B553005C521C /* Keccak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD438E61850B553005C521C /* Keccak.cpp */; };
+		8BDB9EBB183E995900821CAF /* EditSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB9EBA183E995900821CAF /* EditSettingsViewController.m */; };
 		8BF538B81816B733001F2F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538B71816B733001F2F5C /* Foundation.framework */; };
 		8BF538BA1816B733001F2F5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538B91816B733001F2F5C /* CoreGraphics.framework */; };
 		8BF538BC1816B733001F2F5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538BB1816B733001F2F5C /* UIKit.framework */; };
@@ -15,13 +72,11 @@
 		8BF538C81816B733001F2F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF538C71816B733001F2F5C /* AppDelegate.m */; };
 		8BF538CB1816B733001F2F5C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF538C91816B733001F2F5C /* Main_iPhone.storyboard */; };
 		8BF538CE1816B733001F2F5C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF538CC1816B733001F2F5C /* Main_iPad.storyboard */; };
-		8BF538D11816B733001F2F5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF538D01816B733001F2F5C /* ViewController.m */; };
 		8BF538D31816B734001F2F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF538D21816B734001F2F5C /* Images.xcassets */; };
 		8BF538DA1816B734001F2F5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538D91816B734001F2F5C /* XCTest.framework */; };
 		8BF538DB1816B734001F2F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538B71816B733001F2F5C /* Foundation.framework */; };
 		8BF538DC1816B734001F2F5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF538BB1816B733001F2F5C /* UIKit.framework */; };
 		8BF538E41816B734001F2F5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BF538E21816B734001F2F5C /* InfoPlist.strings */; };
-		8BF538E61816B734001F2F5C /* HU_Keccak_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF538E51816B734001F2F5C /* HU_Keccak_AppTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +90,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B044D83182D4E9F00A17BFA /* KeccakMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakMessage.h; path = Model/KeccakMessage.h; sourceTree = "<group>"; };
+		8B044D84182D4E9F00A17BFA /* KeccakMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakMessage.m; path = Model/KeccakMessage.m; sourceTree = "<group>"; };
+		8B044D87182D536C00A17BFA /* duplex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = duplex.cpp; path = Model/Keccak/duplex.cpp; sourceTree = "<group>"; };
+		8B044D88182D536C00A17BFA /* duplex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = duplex.h; path = Model/Keccak/duplex.h; sourceTree = "<group>"; };
+		8B044D89182D536C00A17BFA /* Keccak-f.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "Keccak-f.cpp"; path = "Model/Keccak/Keccak-f.cpp"; sourceTree = "<group>"; };
+		8B044D8A182D536C00A17BFA /* Keccak-f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Keccak-f.h"; path = "Model/Keccak/Keccak-f.h"; sourceTree = "<group>"; };
+		8B044D8B182D536C00A17BFA /* padding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = padding.cpp; path = Model/Keccak/padding.cpp; sourceTree = "<group>"; };
+		8B044D8C182D536C00A17BFA /* padding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = padding.h; path = Model/Keccak/padding.h; sourceTree = "<group>"; };
+		8B044D8D182D536C00A17BFA /* progress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = progress.cpp; path = Model/Keccak/progress.cpp; sourceTree = "<group>"; };
+		8B044D8E182D536C00A17BFA /* progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = progress.h; path = Model/Keccak/progress.h; sourceTree = "<group>"; };
+		8B044D8F182D536C00A17BFA /* sponge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sponge.cpp; path = Model/Keccak/sponge.cpp; sourceTree = "<group>"; };
+		8B044D90182D536C00A17BFA /* sponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sponge.h; path = Model/Keccak/sponge.h; sourceTree = "<group>"; };
+		8B044D91182D536C00A17BFA /* spongetree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spongetree.cpp; path = Model/Keccak/spongetree.cpp; sourceTree = "<group>"; };
+		8B044D92182D536C00A17BFA /* spongetree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spongetree.h; path = Model/Keccak/spongetree.h; sourceTree = "<group>"; };
+		8B044D93182D536C00A17BFA /* transformations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transformations.cpp; path = Model/Keccak/transformations.cpp; sourceTree = "<group>"; };
+		8B044D94182D536C00A17BFA /* transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transformations.h; path = Model/Keccak/transformations.h; sourceTree = "<group>"; };
+		8B044D95182D536C00A17BFA /* translationsymmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translationsymmetry.h; path = Model/Keccak/translationsymmetry.h; sourceTree = "<group>"; };
+		8B044D96182D536C00A17BFA /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = Model/Keccak/types.h; sourceTree = "<group>"; };
+		8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = genKATShortMsg.cpp; path = Model/Keccak/genKATShortMsg.cpp; sourceTree = "<group>"; };
+		8B044DB0182D69F000A17BFA /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		8B044DB1182D69F000A17BFA /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		8B044DB4182DCC5D00A17BFA /* KeccakSponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakSponge.h; path = Model/KeccakSponge.h; sourceTree = "<group>"; };
+		8B044DB5182DCC5D00A17BFA /* KeccakSponge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakSponge.m; path = Model/KeccakSponge.m; sourceTree = "<group>"; };
+		8B044DBD182DD1E100A17BFA /* KeccakTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakTransformation.h; path = Model/KeccakTransformation.h; sourceTree = "<group>"; };
+		8B044DBE182DD1E100A17BFA /* KeccakTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakTransformation.m; path = Model/KeccakTransformation.m; sourceTree = "<group>"; };
+		8B044DC5182DD87300A17BFA /* KeccakPermutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakPermutation.h; path = Model/KeccakPermutation.h; sourceTree = "<group>"; };
+		8B044DC6182DD87300A17BFA /* KeccakPermutation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakPermutation.m; path = Model/KeccakPermutation.m; sourceTree = "<group>"; };
+		8B044DC9182DD8B300A17BFA /* KeccakIdentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakIdentity.h; path = Model/KeccakIdentity.h; sourceTree = "<group>"; };
+		8B044DCA182DD8B300A17BFA /* KeccakIdentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakIdentity.m; path = Model/KeccakIdentity.m; sourceTree = "<group>"; };
+		8B044DCD182DDC2D00A17BFA /* KeccakMessageBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakMessageBlock.h; path = Model/KeccakMessageBlock.h; sourceTree = "<group>"; };
+		8B044DCE182DDC2D00A17BFA /* KeccakMessageBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakMessageBlock.m; path = Model/KeccakMessageBlock.m; sourceTree = "<group>"; };
+		8B1342F218B6B5260085548A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8B1342F418B6B5850085548A /* VisualDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualDetail.h; sourceTree = "<group>"; };
+		8B1342F518B6B5850085548A /* VisualDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualDetail.m; sourceTree = "<group>"; };
+		8B1342F718B6B8E70085548A /* VisualDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualDetailViewController.h; sourceTree = "<group>"; };
+		8B1342F818B6B8E70085548A /* VisualDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualDetailViewController.m; sourceTree = "<group>"; };
+		8B2258E518982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakAbsorbingPhaseLog.h; path = DataLogModel/KeccakAbsorbingPhaseLog.h; sourceTree = "<group>"; };
+		8B2258E618982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakAbsorbingPhaseLog.m; path = DataLogModel/KeccakAbsorbingPhaseLog.m; sourceTree = "<group>"; };
+		8B2258E818982FA50021DAE5 /* KeccakDataLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakDataLog.h; path = DataLogModel/KeccakDataLog.h; sourceTree = "<group>"; };
+		8B2258E918982FA50021DAE5 /* KeccakDataLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakDataLog.m; path = DataLogModel/KeccakDataLog.m; sourceTree = "<group>"; };
+		8B2258EB18982FFE0021DAE5 /* KeccakInitializationPhaseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakInitializationPhaseLog.h; path = DataLogModel/KeccakInitializationPhaseLog.h; sourceTree = "<group>"; };
+		8B2258EC18982FFE0021DAE5 /* KeccakInitializationPhaseLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakInitializationPhaseLog.m; path = DataLogModel/KeccakInitializationPhaseLog.m; sourceTree = "<group>"; };
+		8B2258EE1898306D0021DAE5 /* KeccakSqueezingPhaseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakSqueezingPhaseLog.h; path = DataLogModel/KeccakSqueezingPhaseLog.h; sourceTree = "<group>"; };
+		8B2258EF1898306D0021DAE5 /* KeccakSqueezingPhaseLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakSqueezingPhaseLog.m; path = DataLogModel/KeccakSqueezingPhaseLog.m; sourceTree = "<group>"; };
+		8B2258F1189832260021DAE5 /* CypherMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CypherMessage.h; path = MessageViewModel/CypherMessage.h; sourceTree = "<group>"; };
+		8B2258F2189832260021DAE5 /* CypherMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CypherMessage.m; path = MessageViewModel/CypherMessage.m; sourceTree = "<group>"; };
+		8B2258F41898375D0021DAE5 /* MessageListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListTests.h; sourceTree = "<group>"; };
+		8B2258F51898375D0021DAE5 /* MessageListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListTests.m; sourceTree = "<group>"; };
+		8B2258F7189860C10021DAE5 /* CypherMessageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CypherMessageTests.h; sourceTree = "<group>"; };
+		8B2258F8189860C10021DAE5 /* CypherMessageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CypherMessageTests.m; sourceTree = "<group>"; };
+		8B38CBC618353767003C27BA /* MessageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCollectionView.h; sourceTree = "<group>"; };
+		8B38CBC718353767003C27BA /* MessageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCollectionView.m; sourceTree = "<group>"; };
+		8B38CBC918354ED6003C27BA /* CypherTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CypherTextCell.h; sourceTree = "<group>"; };
+		8B38CBCA18354ED6003C27BA /* CypherTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CypherTextCell.m; sourceTree = "<group>"; };
+		8B38CBCC18355768003C27BA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8B38CBCD18355768003C27BA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8B72ABAB188E3687003FFA17 /* KeccakBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakBlock.h; path = Model/KeccakBlock.h; sourceTree = "<group>"; };
+		8B72ABAC188E3687003FFA17 /* KeccakBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakBlock.m; path = Model/KeccakBlock.m; sourceTree = "<group>"; };
+		8B72ABAE188E376F003FFA17 /* KeccakBlockTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeccakBlockTests.h; sourceTree = "<group>"; };
+		8B72ABAF188E376F003FFA17 /* KeccakBlockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeccakBlockTests.m; sourceTree = "<group>"; };
+		8B72ABB4188EE6F5003FFA17 /* KeccakMessageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeccakMessageTests.h; sourceTree = "<group>"; };
+		8B72ABB5188EE6F5003FFA17 /* KeccakMessageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeccakMessageTests.m; sourceTree = "<group>"; };
+		8B8F3A81183432DB000947CD /* MessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageList.h; path = MessageViewModel/MessageList.h; sourceTree = "<group>"; };
+		8B8F3A82183432DB000947CD /* MessageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageList.m; path = MessageViewModel/MessageList.m; sourceTree = "<group>"; };
+		8B8F3A84183433F0000947CD /* MessageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageType.h; path = MessageViewModel/MessageType.h; sourceTree = "<group>"; };
+		8BBA09641827E48700DAF39D /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		8BBA09651827E48700DAF39D /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		8BBA09731828226F00DAF39D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8BC3166A1889AEA80099EFEF /* KeccakLaneTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakLaneTests.h; path = "HU Keccak AppTests/KeccakLaneTests.h"; sourceTree = SOURCE_ROOT; };
+		8BC3166B1889AEA80099EFEF /* KeccakLaneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakLaneTests.m; path = "HU Keccak AppTests/KeccakLaneTests.m"; sourceTree = SOURCE_ROOT; };
+		8BC3166D1889AF2A0099EFEF /* KeccakLane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakLane.h; path = Model/KeccakLane.h; sourceTree = "<group>"; };
+		8BC3166E1889AF2A0099EFEF /* KeccakLane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakLane.m; path = Model/KeccakLane.m; sourceTree = "<group>"; };
+		8BC52A1B1832DE87002F7AF3 /* PlainTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainTextCell.h; sourceTree = "<group>"; };
+		8BC52A1C1832DE87002F7AF3 /* PlainTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainTextCell.m; sourceTree = "<group>"; };
+		8BC52A1E1833F8BF002F7AF3 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = MessageViewModel/Message.h; sourceTree = "<group>"; };
+		8BC52A1F1833F8C0002F7AF3 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = MessageViewModel/Message.m; sourceTree = "<group>"; };
+		8BC5435F182AACB900148092 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8BC54362182AB20200148092 /* Message_Log.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Message_Log.xcdatamodel; sourceTree = "<group>"; };
+		8BD438E61850B553005C521C /* Keccak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Keccak.cpp; path = Model/Keccak/Keccak.cpp; sourceTree = "<group>"; };
+		8BD438E81850B562005C521C /* Keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Keccak.h; path = Model/Keccak/Keccak.h; sourceTree = "<group>"; };
+		8BDB9EB9183E995900821CAF /* EditSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSettingsViewController.h; sourceTree = "<group>"; };
+		8BDB9EBA183E995900821CAF /* EditSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSettingsViewController.m; sourceTree = "<group>"; };
 		8BF538B41816B733001F2F5C /* HU Keccak App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HU Keccak App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF538B71816B733001F2F5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BF538B91816B733001F2F5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,14 +184,11 @@
 		8BF538C71816B733001F2F5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8BF538CA1816B733001F2F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		8BF538CD1816B733001F2F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		8BF538CF1816B733001F2F5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BF538D01816B733001F2F5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8BF538D21816B734001F2F5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BF538D81816B734001F2F5C /* HU Keccak AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HU Keccak AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF538D91816B734001F2F5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8BF538E11816B734001F2F5C /* HU Keccak AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HU Keccak AppTests-Info.plist"; sourceTree = "<group>"; };
 		8BF538E31816B734001F2F5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8BF538E51816B734001F2F5C /* HU_Keccak_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HU_Keccak_AppTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +196,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1342F318B6B5260085548A /* OpenGLES.framework in Frameworks */,
+				8BC54360182AACB900148092 /* CoreData.framework in Frameworks */,
+				8BBA09741828227000DAF39D /* QuartzCore.framework in Frameworks */,
 				8BF538BA1816B733001F2F5C /* CoreGraphics.framework in Frameworks */,
 				8BF538BC1816B733001F2F5C /* UIKit.framework in Frameworks */,
 				8BF538B81816B733001F2F5C /* Foundation.framework in Frameworks */,
@@ -81,6 +218,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B044D86182D535100A17BFA /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				8B044D87182D536C00A17BFA /* duplex.cpp */,
+				8B044D88182D536C00A17BFA /* duplex.h */,
+				8B044DA5182D5B0A00A17BFA /* genKATShortMsg.cpp */,
+				8B044D89182D536C00A17BFA /* Keccak-f.cpp */,
+				8B044D8A182D536C00A17BFA /* Keccak-f.h */,
+				8BD438E61850B553005C521C /* Keccak.cpp */,
+				8BD438E81850B562005C521C /* Keccak.h */,
+				8B044D8B182D536C00A17BFA /* padding.cpp */,
+				8B044D8C182D536C00A17BFA /* padding.h */,
+				8B044D8D182D536C00A17BFA /* progress.cpp */,
+				8B044D8E182D536C00A17BFA /* progress.h */,
+				8B044D8F182D536C00A17BFA /* sponge.cpp */,
+				8B044D90182D536C00A17BFA /* sponge.h */,
+				8B044D91182D536C00A17BFA /* spongetree.cpp */,
+				8B044D92182D536C00A17BFA /* spongetree.h */,
+				8B044D93182D536C00A17BFA /* transformations.cpp */,
+				8B044D94182D536C00A17BFA /* transformations.h */,
+				8B044D95182D536C00A17BFA /* translationsymmetry.h */,
+				8B044D96182D536C00A17BFA /* types.h */,
+			);
+			name = "C++";
+			sourceTree = "<group>";
+		};
+		8B2258E018982DAF0021DAE5 /* KeccakModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B72ABAB188E3687003FFA17 /* KeccakBlock.h */,
+				8B72ABAC188E3687003FFA17 /* KeccakBlock.m */,
+				8BC3166D1889AF2A0099EFEF /* KeccakLane.h */,
+				8BC3166E1889AF2A0099EFEF /* KeccakLane.m */,
+				8B044D83182D4E9F00A17BFA /* KeccakMessage.h */,
+				8B044D84182D4E9F00A17BFA /* KeccakMessage.m */,
+			);
+			name = KeccakModel;
+			sourceTree = "<group>";
+		};
+		8B2258E118982DD40021DAE5 /* DataLogModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B2258E518982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.h */,
+				8B2258E618982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.m */,
+				8B2258E818982FA50021DAE5 /* KeccakDataLog.h */,
+				8B2258E918982FA50021DAE5 /* KeccakDataLog.m */,
+				8B2258EB18982FFE0021DAE5 /* KeccakInitializationPhaseLog.h */,
+				8B2258EC18982FFE0021DAE5 /* KeccakInitializationPhaseLog.m */,
+				8B2258EE1898306D0021DAE5 /* KeccakSqueezingPhaseLog.h */,
+				8B2258EF1898306D0021DAE5 /* KeccakSqueezingPhaseLog.m */,
+			);
+			name = DataLogModel;
+			sourceTree = "<group>";
+		};
+		8BBA09751828378E00DAF39D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B044D86182D535100A17BFA /* C++ */,
+				8B044DC9182DD8B300A17BFA /* KeccakIdentity.h */,
+				8B044DCA182DD8B300A17BFA /* KeccakIdentity.m */,
+				8B044DCD182DDC2D00A17BFA /* KeccakMessageBlock.h */,
+				8B044DCE182DDC2D00A17BFA /* KeccakMessageBlock.m */,
+				8B044DB4182DCC5D00A17BFA /* KeccakSponge.h */,
+				8B044DB5182DCC5D00A17BFA /* KeccakSponge.m */,
+				8B044DC5182DD87300A17BFA /* KeccakPermutation.h */,
+				8B044DC6182DD87300A17BFA /* KeccakPermutation.m */,
+				8B044DBD182DD1E100A17BFA /* KeccakTransformation.h */,
+				8B044DBE182DD1E100A17BFA /* KeccakTransformation.m */,
+				8BC54361182AB20200148092 /* Message_Log.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8BC52A211833F8CD002F7AF3 /* MessageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B2258F1189832260021DAE5 /* CypherMessage.h */,
+				8B2258F2189832260021DAE5 /* CypherMessage.m */,
+				8BC52A1E1833F8BF002F7AF3 /* Message.h */,
+				8BC52A1F1833F8C0002F7AF3 /* Message.m */,
+				8B8F3A81183432DB000947CD /* MessageList.h */,
+				8B8F3A82183432DB000947CD /* MessageList.m */,
+				8B8F3A84183433F0000947CD /* MessageType.h */,
+			);
+			name = MessageViewModel;
+			sourceTree = "<group>";
+		};
 		8BF538AB1816B733001F2F5C = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +327,9 @@
 		8BF538B61816B733001F2F5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B1342F218B6B5260085548A /* OpenGLES.framework */,
+				8BC5435F182AACB900148092 /* CoreData.framework */,
+				8BBA09731828226F00DAF39D /* QuartzCore.framework */,
 				8BF538B71816B733001F2F5C /* Foundation.framework */,
 				8BF538B91816B733001F2F5C /* CoreGraphics.framework */,
 				8BF538BB1816B733001F2F5C /* UIKit.framework */,
@@ -114,12 +341,28 @@
 		8BF538BD1816B733001F2F5C /* HU Keccak App */ = {
 			isa = PBXGroup;
 			children = (
-				8BF538C61816B733001F2F5C /* AppDelegate.h */,
-				8BF538C71816B733001F2F5C /* AppDelegate.m */,
-				8BF538C91816B733001F2F5C /* Main_iPhone.storyboard */,
 				8BF538CC1816B733001F2F5C /* Main_iPad.storyboard */,
-				8BF538CF1816B733001F2F5C /* ViewController.h */,
-				8BF538D01816B733001F2F5C /* ViewController.m */,
+				8BF538C91816B733001F2F5C /* Main_iPhone.storyboard */,
+				8B38CBCC18355768003C27BA /* DetailViewController.h */,
+				8B38CBCD18355768003C27BA /* DetailViewController.m */,
+				8BDB9EB9183E995900821CAF /* EditSettingsViewController.h */,
+				8BDB9EBA183E995900821CAF /* EditSettingsViewController.m */,
+				8B38CBC618353767003C27BA /* MessageCollectionView.h */,
+				8B38CBC718353767003C27BA /* MessageCollectionView.m */,
+				8BBA09641827E48700DAF39D /* MessageViewController.h */,
+				8BBA09651827E48700DAF39D /* MessageViewController.m */,
+				8B1342F718B6B8E70085548A /* VisualDetailViewController.h */,
+				8B1342F818B6B8E70085548A /* VisualDetailViewController.m */,
+				8B1342F418B6B5850085548A /* VisualDetail.h */,
+				8B1342F518B6B5850085548A /* VisualDetail.m */,
+				8B2258E118982DD40021DAE5 /* DataLogModel */,
+				8B2258E018982DAF0021DAE5 /* KeccakModel */,
+				8BC52A211833F8CD002F7AF3 /* MessageViewModel */,
+				8B38CBC918354ED6003C27BA /* CypherTextCell.h */,
+				8B38CBCA18354ED6003C27BA /* CypherTextCell.m */,
+				8BC52A1B1832DE87002F7AF3 /* PlainTextCell.h */,
+				8BC52A1C1832DE87002F7AF3 /* PlainTextCell.m */,
+				8BBA09751828378E00DAF39D /* Model */,
 				8BF538D21816B734001F2F5C /* Images.xcassets */,
 				8BF538BE1816B733001F2F5C /* Supporting Files */,
 			);
@@ -129,10 +372,14 @@
 		8BF538BE1816B733001F2F5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8BF538C61816B733001F2F5C /* AppDelegate.h */,
+				8BF538C71816B733001F2F5C /* AppDelegate.m */,
 				8BF538BF1816B733001F2F5C /* HU Keccak App-Info.plist */,
 				8BF538C01816B733001F2F5C /* InfoPlist.strings */,
 				8BF538C31816B733001F2F5C /* main.m */,
 				8BF538C51816B733001F2F5C /* HU Keccak App-Prefix.pch */,
+				8B044DB0182D69F000A17BFA /* NSString+Base64.h */,
+				8B044DB1182D69F000A17BFA /* NSString+Base64.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,7 +387,16 @@
 		8BF538DF1816B734001F2F5C /* HU Keccak AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BF538E51816B734001F2F5C /* HU_Keccak_AppTests.m */,
+				8B2258F7189860C10021DAE5 /* CypherMessageTests.h */,
+				8B2258F8189860C10021DAE5 /* CypherMessageTests.m */,
+				8B72ABAE188E376F003FFA17 /* KeccakBlockTests.h */,
+				8B72ABAF188E376F003FFA17 /* KeccakBlockTests.m */,
+				8BC3166A1889AEA80099EFEF /* KeccakLaneTests.h */,
+				8BC3166B1889AEA80099EFEF /* KeccakLaneTests.m */,
+				8B72ABB4188EE6F5003FFA17 /* KeccakMessageTests.h */,
+				8B72ABB5188EE6F5003FFA17 /* KeccakMessageTests.m */,
+				8B2258F41898375D0021DAE5 /* MessageListTests.h */,
+				8B2258F51898375D0021DAE5 /* MessageListTests.m */,
 				8BF538E01816B734001F2F5C /* Supporting Files */,
 			);
 			path = "HU Keccak AppTests";
@@ -253,9 +509,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF538D11816B733001F2F5C /* ViewController.m in Sources */,
+				8B044D99182D536C00A17BFA /* Keccak-f.cpp in Sources */,
+				8B2258EA18982FA50021DAE5 /* KeccakDataLog.m in Sources */,
+				8BC3166F1889AF2A0099EFEF /* KeccakLane.m in Sources */,
+				8BBA09661827E48700DAF39D /* MessageViewController.m in Sources */,
+				8B044DA6182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */,
+				8B1342F918B6B8E70085548A /* VisualDetailViewController.m in Sources */,
+				8B2258F01898306D0021DAE5 /* KeccakSqueezingPhaseLog.m in Sources */,
+				8B044DA3182D536C00A17BFA /* transformations.cpp in Sources */,
+				8B1342F618B6B5850085548A /* VisualDetail.m in Sources */,
+				8B72ABAD188E3687003FFA17 /* KeccakBlock.m in Sources */,
+				8B044D9D182D536C00A17BFA /* progress.cpp in Sources */,
+				8B044DCF182DDC2D00A17BFA /* KeccakMessageBlock.m in Sources */,
+				8B044D97182D536C00A17BFA /* duplex.cpp in Sources */,
+				8B044DC7182DD87300A17BFA /* KeccakPermutation.m in Sources */,
+				8BDB9EBB183E995900821CAF /* EditSettingsViewController.m in Sources */,
+				8BD438E71850B553005C521C /* Keccak.cpp in Sources */,
+				8B044D9B182D536C00A17BFA /* padding.cpp in Sources */,
+				8B38CBCE18355768003C27BA /* DetailViewController.m in Sources */,
+				8BC52A201833F8C0002F7AF3 /* Message.m in Sources */,
+				8B044DBF182DD1E100A17BFA /* KeccakTransformation.m in Sources */,
+				8B044DB6182DCC5D00A17BFA /* KeccakSponge.m in Sources */,
+				8BC52A1D1832DE87002F7AF3 /* PlainTextCell.m in Sources */,
+				8BC54363182AB20200148092 /* Message_Log.xcdatamodeld in Sources */,
+				8B38CBC818353767003C27BA /* MessageCollectionView.m in Sources */,
+				8B044D85182D4E9F00A17BFA /* KeccakMessage.m in Sources */,
+				8B2258ED18982FFE0021DAE5 /* KeccakInitializationPhaseLog.m in Sources */,
+				8B044DB2182D69F000A17BFA /* NSString+Base64.m in Sources */,
+				8B044DA1182D536C00A17BFA /* spongetree.cpp in Sources */,
+				8B2258F3189832260021DAE5 /* CypherMessage.m in Sources */,
+				8B38CBCB18354ED6003C27BA /* CypherTextCell.m in Sources */,
 				8BF538C81816B733001F2F5C /* AppDelegate.m in Sources */,
+				8B8F3A83183432DB000947CD /* MessageList.m in Sources */,
 				8BF538C41816B733001F2F5C /* main.m in Sources */,
+				8B044D9F182D536C00A17BFA /* sponge.cpp in Sources */,
+				8B044DCB182DD8B300A17BFA /* KeccakIdentity.m in Sources */,
+				8B2258E718982F7D0021DAE5 /* KeccakAbsorbingPhaseLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +552,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF538E61816B734001F2F5C /* HU_Keccak_AppTests.m in Sources */,
+				8BC3166C1889AEA80099EFEF /* KeccakLaneTests.m in Sources */,
+				8B72ABB6188EE6F5003FFA17 /* KeccakMessageTests.m in Sources */,
+				8B72ABB0188E376F003FFA17 /* KeccakBlockTests.m in Sources */,
+				8B044DB3182D69F000A17BFA /* NSString+Base64.m in Sources */,
+				8B044DA0182D536C00A17BFA /* sponge.cpp in Sources */,
+				8B044DB7182DCC5D00A17BFA /* KeccakSponge.m in Sources */,
+				8B044DA7182D5B0A00A17BFA /* genKATShortMsg.cpp in Sources */,
+				8B044D9C182D536C00A17BFA /* padding.cpp in Sources */,
+				8B044DA2182D536C00A17BFA /* spongetree.cpp in Sources */,
+				8B044DCC182DD8B300A17BFA /* KeccakIdentity.m in Sources */,
+				8B2258F9189860C10021DAE5 /* CypherMessageTests.m in Sources */,
+				8B044DC8182DD87300A17BFA /* KeccakPermutation.m in Sources */,
+				8B044D9E182D536C00A17BFA /* progress.cpp in Sources */,
+				8B044DC0182DD1E100A17BFA /* KeccakTransformation.m in Sources */,
+				8B044DA4182D536C00A17BFA /* transformations.cpp in Sources */,
+				8B044D98182D536C00A17BFA /* duplex.cpp in Sources */,
+				8B044D9A182D536C00A17BFA /* Keccak-f.cpp in Sources */,
+				8B044DD0182DDC2D00A17BFA /* KeccakMessageBlock.m in Sources */,
+				8B2258F61898375D0021DAE5 /* MessageListTests.m in Sources */,
+				8BC54364182AB20200148092 /* Message_Log.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +782,7 @@
 				8BF538EB1816B734001F2F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BF538EC1816B734001F2F5C /* Build configuration list for PBXNativeTarget "HU Keccak AppTests" */ = {
 			isa = XCConfigurationList;
@@ -482,8 +791,23 @@
 				8BF538EE1816B734001F2F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BC54361182AB20200148092 /* Message_Log.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BC54362182AB20200148092 /* Message_Log.xcdatamodel */,
+			);
+			currentVersion = 8BC54362182AB20200148092 /* Message_Log.xcdatamodel */;
+			name = Message_Log.xcdatamodeld;
+			path = Model/Message_Log.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8BF538AC1816B733001F2F5C /* Project object */;
 }

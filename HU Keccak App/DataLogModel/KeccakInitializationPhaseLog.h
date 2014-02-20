@@ -1,0 +1,13 @@
+//
+//  KeccakInitializationPhaseLog.h
+//  HU Keccak App
+//
+//  Created by Philip J Browning II on 1/28/14.
+//  Copyright (c) 2014 Philip Browning. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface KeccakInitializationPhaseLog : NSObject
+
+@end
