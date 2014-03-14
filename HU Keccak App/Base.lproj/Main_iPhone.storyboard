@@ -565,15 +565,12 @@
                         <viewControllerLayoutGuide type="top" id="HMx-x1-ZtN"/>
                         <viewControllerLayoutGuide type="bottom" id="Q77-WB-e1F"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E1L-cb-WDc" customClass="VisualDetail">
+                    <view key="view" contentMode="scaleToFill" id="E1L-cb-WDc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Visual Detail" id="LWp-Ay-Rox"/>
-                    <connections>
-                        <outlet property="glView" destination="E1L-cb-WDc" id="Rhk-RS-v7W"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV4-OS-Dda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

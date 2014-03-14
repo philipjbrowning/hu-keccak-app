@@ -11,6 +11,6 @@
 
 @interface VisualDetailViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet VisualDetail *glView;
+@property (strong, nonatomic) VisualDetail *glView;
 
 @end

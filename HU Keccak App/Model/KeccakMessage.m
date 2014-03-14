@@ -106,8 +106,15 @@
     
     NSMutableArray *P = [[NSMutableArray alloc] init];
     NSString *M = _plainText;
-    NSUInteger i=0;
-    for (i=0; i<[M length]; i++) {
+    
+    // Add the required padding at the beginning of the padded message (P)
+    for (NSUInteger i=0; i<25-([M length]%25); i++) {
+        [P insertObject:[NSNumber numberWithInt:0] atIndex:i];
+        // NSLog(@"P[%lu] = 0 (ASCII:%@)", i, [P objectAtIndex:i]);
+    }
+    
+    // Add the plain text messsage (M) to the padded message (P)
+    for (NSUInteger i=0; i<[M length]; i++) {
         [P insertObject:[NSNumber numberWithInt:[M characterAtIndex:i]] atIndex:i];
         // NSLog(@"P[%lu] = %@ (ASCII:%@)", i, [M substringWithRange:NSMakeRange(i, 1)], [P objectAtIndex:i]);
     }
@@ -132,6 +139,18 @@
     NSLog(@"----------");
     [S NSLogState];
     
+    /*
+    for (NSUInteger block=0; block<_totalBlocks; block++) {
+        while (<#condition#>) {
+            <#statements#>
+        }
+    }
+    
+    for (NSUInteger i=0; i<(_rate/_maxLaneBits); i++) {
+        NSLog(@"Insert lane #%lu", i);
+    }
+    */
+    
     NSUInteger blockIndex = 0;
     for (NSUInteger block=0; block<_totalBlocks; block++) {
         
@@ -142,7 +161,6 @@
         //     x = column index (0..4)
         //     y = row index (0...4)
         //     Pi = blocks of the padded message organized as arrays of lanes
-        
         
         for (NSUInteger y=0; y<[S maxRows]; y++) {
             for (NSUInteger x=0; x<[S maxColumns]; x++) {
@@ -205,8 +223,9 @@
     }
     
     _cypherHexText = Z;
-    // NSLog(@"_cypherHexText = %@", _cypherHexText);
+    NSLog(@"_cypherHexText = %@", _cypherHexText);
     
+    /*
     // Convert _cypherHexText to _cypherText
     i = 0;
     while (i < [_cypherHexText length])
@@ -220,6 +239,9 @@
     }
     
     return _cypherText;
+     */
+    
+    return _cypherHexText;
 }
 
 - (NSUInteger)numberOfBlocksRequired

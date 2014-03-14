@@ -33,6 +33,7 @@
 		8B38CBC818353767003C27BA /* MessageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CBC718353767003C27BA /* MessageCollectionView.m */; };
 		8B38CBCB18354ED6003C27BA /* CypherTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CBCA18354ED6003C27BA /* CypherTextCell.m */; };
 		8B38CBCE18355768003C27BA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CBCD18355768003C27BA /* DetailViewController.m */; };
+		8B536A5B18C7BEF700096B5A /* VisualKeccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B536A5A18C7BEF700096B5A /* VisualKeccak.c */; };
 		8B72ABAD188E3687003FFA17 /* KeccakBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B72ABAC188E3687003FFA17 /* KeccakBlock.m */; };
 		8B72ABB0188E376F003FFA17 /* KeccakBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B72ABAF188E376F003FFA17 /* KeccakBlockTests.m */; };
 		8B72ABB6188EE6F5003FFA17 /* KeccakMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B72ABB5188EE6F5003FFA17 /* KeccakMessageTests.m */; };
@@ -112,6 +113,7 @@
 		8B38CBCA18354ED6003C27BA /* CypherTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CypherTextCell.m; sourceTree = "<group>"; };
 		8B38CBCC18355768003C27BA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8B38CBCD18355768003C27BA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8B536A5A18C7BEF700096B5A /* VisualKeccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VisualKeccak.c; sourceTree = "<group>"; };
 		8B72ABAB188E3687003FFA17 /* KeccakBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeccakBlock.h; path = Model/KeccakBlock.h; sourceTree = "<group>"; };
 		8B72ABAC188E3687003FFA17 /* KeccakBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeccakBlock.m; path = Model/KeccakBlock.m; sourceTree = "<group>"; };
 		8B72ABAE188E376F003FFA17 /* KeccakBlockTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeccakBlockTests.h; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		8BBA09751828378E00DAF39D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B536A5A18C7BEF700096B5A /* VisualKeccak.c */,
 				8B044DC9182DD8B300A17BFA /* KeccakIdentity.h */,
 				8B044DCA182DD8B300A17BFA /* KeccakIdentity.m */,
 				8B044DCD182DDC2D00A17BFA /* KeccakMessageBlock.h */,
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2258EA18982FA50021DAE5 /* KeccakDataLog.m in Sources */,
+				8B536A5B18C7BEF700096B5A /* VisualKeccak.c in Sources */,
 				8BC3166F1889AF2A0099EFEF /* KeccakLane.m in Sources */,
 				8BBA09661827E48700DAF39D /* MessageViewController.m in Sources */,
 				8B1342F918B6B8E70085548A /* VisualDetailViewController.m in Sources */,

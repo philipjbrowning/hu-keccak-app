@@ -28,6 +28,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    _glView = [[VisualDetail alloc] initWithFrame:CGRectMake(0, 0, 320, 534)];
+    [self.view addSubview:_glView];
 }
 
 - (void)didReceiveMemoryWarning
