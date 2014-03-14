@@ -114,17 +114,18 @@
     }
     
     // Add the plain text messsage (M) to the padded message (P)
+    NSUInteger blockIndex = [P count];
     for (NSUInteger i=0; i<[M length]; i++) {
-        [P insertObject:[NSNumber numberWithInt:[M characterAtIndex:i]] atIndex:i];
-        // NSLog(@"P[%lu] = %@ (ASCII:%@)", i, [M substringWithRange:NSMakeRange(i, 1)], [P objectAtIndex:i]);
+        [P insertObject:[NSNumber numberWithInt:[M characterAtIndex:i]] atIndex:blockIndex];
+        // NSLog(@"P[%lu] = %@ (ASCII:%@)", blockIndex, [M substringWithRange:NSMakeRange(i, 1)], [P objectAtIndex:i]);
+        blockIndex++;
     }
     
     // P = P xor (0x00 || ... || 0x00 || 0x80)
     //
     //     P = the padded message, organized as an array of blocks Pi
     
-    // NO PADDING USED
-    
+    // NOT USED
     
     /* ---------------------------------------------------------------------- *
      * Absorbing Phase                                                        *
@@ -139,52 +140,43 @@
     NSLog(@"----------");
     [S NSLogState];
     
-    /*
-    for (NSUInteger block=0; block<_totalBlocks; block++) {
-        while (<#condition#>) {
-            <#statements#>
-        }
-    }
+    // S[x,y] = S[x,y] xor Pi[x+5*y],     forall (x,y) such that x+5*y < r/w
+    //
+    //     r = rate
+    //     w = lane size
+    //     x = column index (0..4)
+    //     y = row index (0...4)
+    //     Pi = blocks of the padded message organized as arrays of lanes
     
-    for (NSUInteger i=0; i<(_rate/_maxLaneBits); i++) {
-        NSLog(@"Insert lane #%lu", i);
-    }
-    */
-    
-    NSUInteger blockIndex = 0;
-    for (NSUInteger block=0; block<_totalBlocks; block++) {
-        
-        // S[x,y] = S[x,y] xor Pi[x+5*y],     forall (x,y) such that x+5*y < r/w
-        //
-        //     r = rate
-        //     w = lane size
-        //     x = column index (0..4)
-        //     y = row index (0...4)
-        //     Pi = blocks of the padded message organized as arrays of lanes
-        
+    blockIndex = 0;
+    do {
+        NSUInteger i=0;
         for (NSUInteger y=0; y<[S maxRows]; y++) {
             for (NSUInteger x=0; x<[S maxColumns]; x++) {
-                if ((blockIndex < [P count]) && ((x+(5*y)) < [S maxLanes])) {
-                    NSUInteger old_sXY = [[S laneAtColumn:x andRow:y] value];
-                    NSUInteger pXplus5timesY = [[P objectAtIndex:blockIndex] integerValue];
-                    NSUInteger new_sXY = old_sXY^pXplus5timesY;
-                    [S setLaneValue:new_sXY toColumn:x andRow:y];
-                    // NSLog(@"S[%lu,%lu] = %lu^%lu = %lu, blockIndex = %lu", x, y, old_sXY, pXplus5timesY, new_sXY, blockIndex);
-                    blockIndex++;
+                // NSLog(@"S[%lu,%lu] = %lu", x, y, [[S laneAtColumn:x andRow:y] value]);
+                // NSLog(@"Pi[%lu] = %lu", blockIndex, [[P objectAtIndex:blockIndex] integerValue]);
+                NSUInteger old_sXY = [[S laneAtColumn:x andRow:y] value];
+                NSUInteger pXplus5timesY = [[P objectAtIndex:blockIndex] integerValue];
+                NSUInteger new_sXY = old_sXY^pXplus5timesY;
+                [S setLaneValue:new_sXY toColumn:x andRow:y];
+                blockIndex++;
+                i++;
+                if (i >= (_rate/_bitsPerASCIIChar)) {
+                    break;
                 }
             }
+            if (i >= (_rate/_bitsPerASCIIChar)) {
+                break;
+            }
         }
-        NSLog(@"S[x,y]");
-        NSLog(@"----------");
-        [S NSLogState];
         
+        // NSLog(@"S = [self keccakFwithBlock:S]");
         S = [self keccakFwithBlock:S];
         
-    }
-    
-    NSLog(@"S[x,y]");
-    NSLog(@"----------");
-    [S NSLogState];
+        NSLog(@"S[x,y] inserted %lu blocks", blockIndex);
+        NSLog(@"-------------------------");
+        [S NSLogState];
+    } while (blockIndex < [P count] - 1);
     
     
     /* ---------------------------------------------------------------------- *
@@ -197,9 +189,59 @@
     
     NSMutableString *Z = [[NSMutableString alloc] initWithString:@""];
     
-    // while output is requested
-    
+    blockIndex = 0;
     BOOL moreOutputRequested = YES;
+    while (moreOutputRequested == YES) {
+        NSUInteger i=0;
+        for (NSUInteger y=0; y<[S maxRows]; y++) {
+            for (NSUInteger x=0; x<[S maxColumns]; x++) {
+                [Z appendString:[[S laneAtColumn:x andRow:y] hexValue]];
+                NSLog(@"Z[%lu] = %@", blockIndex, [[S laneAtColumn:x andRow:y] hexValue]);
+                blockIndex++;
+                i++;
+                NSLog(@"blockIndex = %lu", blockIndex);
+                NSLog(@"i = %lu", i);
+                NSLog(@"_outputLength/_bitsPerASCIIChar = %lu", _outputLength/_bitsPerASCIIChar);
+                if (blockIndex >= (_outputLength/_bitsPerASCIIChar)) {
+                    moreOutputRequested = NO;
+                    NSLog(@"No more output needed (inner)");
+                    break;
+                }
+                if (i >= (_rate/_bitsPerASCIIChar)) {
+                    break;
+                }
+            }
+            if (blockIndex >= (_outputLength/_bitsPerASCIIChar)) {
+                moreOutputRequested = NO;
+                NSLog(@"No more output needed (outer)");
+                break;
+            }
+            if (i >= (_rate/_bitsPerASCIIChar)) {
+                break;
+            }
+        }
+        if (moreOutputRequested) {
+            NSLog(@"S = Keccak-f[r+c](S)");
+            S = [self keccakFwithBlock:S];
+        }
+        
+        NSLog(@"S[x,y]");
+        NSLog(@"-----------");
+        [S NSLogState];
+    }
+    
+    /*
+    blockIndex = 0;
+    
+    */
+    
+    
+    
+    
+    
+    // while output is requested
+    /*
+    moreOutputRequested = YES;
     while (moreOutputRequested) {
         
         // Z = Z || S[x,y],                   forall (x,y) such that x+5*y < r/w
@@ -221,6 +263,7 @@
         
         // S = Keccak-f[r+c](S)
     }
+    */
     
     _cypherHexText = Z;
     NSLog(@"_cypherHexText = %@", _cypherHexText);
@@ -286,10 +329,8 @@
 - (KeccakBlock*)keccakRoundWithBlock:(KeccakBlock*)A
 {
     A = [self keccakThetaWithBlock:A];
-    // [A NSLogState];
     NSMutableDictionary *B = [self keccakRhoAndPiWithBlock:A];
     A = [self keccakChiWithBlock:A andB:B];
-    // [A NSLogState];
     A = [self keccakIotaWithBlock:A];
     return A;
 }
